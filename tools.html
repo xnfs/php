@@ -1,0 +1,14 @@
+<script>
+// 加减商品数量的方法;increase参数是区分加还是减
+function changeQty(increase) {
+	    var qty = parseInt($('.select_number').find("input").val());//获取输入框里面的数据，并转化为整型
+	    if ( !isNaN(qty) ) {
+	        qty = increase ? qty+1 : (qty >{$goods.minimum}?qty-1:{$goods.minimum});
+	        $('.select_number').find("input").val(qty);//将得到的新值写回去
+	    }
+	}
+
+
+
+
+</script>
